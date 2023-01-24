@@ -1,0 +1,6 @@
+black
+python-dotenv
+python-dateutil
+isort
+markdown
+mdx_wikilink_plus
