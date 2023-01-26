@@ -1,7 +1,12 @@
 {
   "folders": [
     {
+      // One Python 3.11 environment for all other projects
       "path": "."
+    },
+    {
+      // iCloud Photos Downloader requires its own isolated Python 3.9 environment
+      "path": "icloud-photos-dl"
     }
   ],
   "settings": {
