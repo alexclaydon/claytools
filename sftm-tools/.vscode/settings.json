@@ -1,0 +1,11 @@
+{
+  "settings": {
+    "python.pythonPath": "/.venv/bin/python3.11",
+    // "python.autoComplete.extraPaths": [
+    //   "<path-to-generated-modules>"
+    // ],
+    // "python.analysis.extraPaths": [
+    //   "<path-to-generated-modules>"
+    // ],
+  }
+}

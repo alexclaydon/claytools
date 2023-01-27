@@ -1,0 +1,5 @@
+{
+  "settings": {
+    "python.pythonPath": "/.venv/bin/python3.9",
+  }
+}
