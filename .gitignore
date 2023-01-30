@@ -4,5 +4,14 @@
 .venv
 .env
 
-input
+working
 output
+
+node_modules
+
+git-sim_media
+
+# Exclude convenience Python script samples from Epic and Blender Foundation
+sftm-tools/Blender/examples
+sftm-tools/UE5/utils/Epic-prepared
+web-tools/geckodriver

@@ -1,6 +1,13 @@
+# global
+
 black
 python-dotenv
 python-dateutil
 isort
+
+# text-tools
 markdown
 mdx_wikilink_plus
+
+# web-tools
+beautifulsoup4

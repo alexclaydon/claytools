@@ -1,15 +1,23 @@
 {
   "folders": [
     {
-      // One Python 3.11 environment for all other projects
       "path": "."
     },
     {
-      // iCloud Photos Downloader requires its own isolated Python 3.9 environment
+      "path": "sftm-tools"
+    },
+    {
+      "path": "sftm-tools/UE5"
+    },
+    {
+      "path": "dagster-etl"
+    },
+    {
       "path": "icloud-photos-dl"
-    }
+    },
   ],
   "settings": {
+    "python.defaultInterpreterPath": "/.venv/bin/python3.11",
     "[python]": {
       "editor.defaultFormatter": "ms-python.black-formatter",
       "editor.formatOnSave": true,
