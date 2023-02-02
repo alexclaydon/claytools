@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def send_message_to_pushover(message: str):
+def notify_with_pushover(message: str):
     conn = http.client.HTTPSConnection("api.pushover.net:443")
     conn.request(
         "POST",
@@ -25,8 +25,12 @@ def send_message_to_pushover(message: str):
     conn.getresponse()
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Send a message to Pushover")
     parser.add_argument("message", type=str, help="The message to send")
     args = parser.parse_args()
-    send_message_to_pushover(args.message)
+    notify_with_pushover(args.message)
+
+
+if __name__ == "__main__":
+    main()
