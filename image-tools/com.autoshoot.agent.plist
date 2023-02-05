@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.autoshoot.agent</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/alexclaydon/dev/dev-projects/claytools/image-tools</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>./autoshoot-desktop.sh</string>
+      <string>/Users/alexclaydon/ShareDir/AutoShots</string>
+    </array>
+    <key>Nice</key>
+    <integer>1</integer>
+    <key>StartInterval</key>
+    <integer>60</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/tmp/autoshoot.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/autoshoot.out</string>
+  </dict>
+</plist>
