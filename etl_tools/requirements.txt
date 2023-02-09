@@ -1,0 +1,18 @@
+black
+
+# Tutorial_01
+numpy
+scipy
+matplotlib
+pandas
+requests
+wordcloud
+tqdm
+
+# Tutorial_02
+PyGithub
+nbconvert
+nbformat
+ipykernel
+jupytext
+pytest

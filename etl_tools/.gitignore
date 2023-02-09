@@ -1,0 +1,12 @@
+# Data dirs
+history
+schedules
+storage
+logs
+.telemetry
+.logs_queue
+
+# Legacy working dirs
+
+FOR-EXTRACT-pvmon
+portfolio-tools
