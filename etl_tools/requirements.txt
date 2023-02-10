@@ -1,4 +1,5 @@
 black
+isort
 
 # Tutorial_01
 numpy
