@@ -20,9 +20,9 @@ working
 output
 tutorial
 
-# Web-tools
+# web_tools
 
-web-tools/geckodriver
+web_tools/geckodriver
 
 # Other
 
@@ -153,6 +153,7 @@ celerybeat.pid
 
 # Environments
 .env
+.envrc
 .venv
 env/
 venv/
