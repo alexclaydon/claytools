@@ -4,17 +4,17 @@
       "path": "."
     },
     {
-      "path": "sftm-tools"
+      "path": "etl_tools"
     },
     {
-      "path": "sftm-tools/UE5"
+      "path": "icloud_photos_dl"
     },
     {
-      "path": "dagster-etl"
+      "path": "src/sftm_tools"
     },
     {
-      "path": "icloud-photos-dl"
-    },
+      "path": "src/tui"
+    }
   ],
   "settings": {
     "python.defaultInterpreterPath": "/.venv/bin/python3.11",
@@ -22,9 +22,9 @@
       "editor.defaultFormatter": "ms-python.black-formatter",
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
-          "source.organizeImports": true
-      },
+        "source.organizeImports": true
+      }
     },
-    "isort.args":["--profile", "black"],
+    "isort.args": ["--profile", "black"]
   }
 }

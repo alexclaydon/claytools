@@ -8,15 +8,15 @@
       "type": "zshdb",
       "request": "launch",
       "name": "Zsh: download-all-pages.sh",
-      "cwd": "$HOME/dev/dev-projects/claytools/web-tools",
-      "program": "$HOME/dev/dev-projects/claytools/web-tools/download-all-pages.sh",
+      "cwd": "$HOME/dev/dev-projects/claytools/web_tools",
+      "program": "$HOME/dev/dev-projects/claytools/web_tools/download-all-pages.sh",
       "args": []
     },
     {
       "name": "Python: get-urls.py",
       "type": "python",
       "request": "launch",
-      "program": "web-tools/get-urls.py",
+      "program": "web_tools/get-urls.py",
       "console": "integratedTerminal",
       "justMyCode": true
     }
