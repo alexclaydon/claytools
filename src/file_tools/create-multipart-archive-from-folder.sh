@@ -25,6 +25,18 @@ fi
 
 size_param="$2"
 
+# Check if password parameter is provided as a command line argument
+if [[ -n "$3" ]]; then
+  password="$3"
+else
+  password="$ZIP_PASSWORD"
+fi
+
+if [[ -z "$password" ]]; then
+  echo "Please provide the password as a command line argument or set the ZIP_PASSWORD environment variable."
+  exit 1
+fi
+
 # Replace any illegal characters in the directory name with legal characters
 directory_name="$(basename "$working_dir")"
 archive_name="$(echo "$directory_name" | tr -dc '[:alnum:]\n\r')"
@@ -43,6 +55,6 @@ echo "Archive filename: $archive_name"
 
 # Create the archive with the Archive Utility and split it into parts of the specified size
 cd "$working_dir" || exit 1
-zip -r -s "${size_param}m" "${archive_name}.zip" . || exit 1
+zip -e -r -s "${size_param}m" "${archive_name}.zip" . -P "$password" || exit 1
 
 echo "Multipart archive created successfully."
