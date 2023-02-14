@@ -17,3 +17,6 @@ nbformat
 ipykernel
 jupytext
 pytest
+
+# todoist API Python Client
+todoist-api-python

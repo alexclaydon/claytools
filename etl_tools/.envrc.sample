@@ -11,4 +11,7 @@ export MallocNanoZone=1
 
 # To persist Dagster data across sessions; _must be an absolute path_, and variables like `$HOME` will not be correctly evaluated
 export DAGSTER_HOME=""
-export GITHUB_ACCESS_TOKEN=""
+
+# Tokens
+GITHUB_ACCESS_TOKEN=""
+TODOIST_API_TOKEN=""

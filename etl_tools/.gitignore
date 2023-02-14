@@ -1,12 +1,17 @@
 # Data dirs
-history
-schedules
-storage
-logs
-.telemetry
-.logs_queue
+data/history
+data/schedules
+data/storage
+data/logs
+data/.telemetry
+data/.logs_queue
+data/.nux
 
 # Legacy working dirs
+legacy
 
-FOR-EXTRACT-pvmon
-portfolio-tools
+# Tutorial and scratchpad files
+etl_tools/src/general/gitstars.py
+etl_tools/src/general/hackernews.py
+etl_tools/src/general/hn_dagster.py
+etl_tools/tests/general_tests/test_assets.py
