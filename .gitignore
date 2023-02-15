@@ -11,7 +11,7 @@ node_modules
 # Temp folders
 tmp*
 
-# Working and tutorial folders
+# Working, tutorial and other repo-specific temp files and folders
 working
 output
 tutorial

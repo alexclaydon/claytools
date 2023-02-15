@@ -25,6 +25,14 @@
         "source.organizeImports": true
       }
     },
-    "isort.args": ["--profile", "black"]
+    "isort.args": [
+      "--profile",
+      "black"
+    ],
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.egg-info": true,
+      "**/*.ipynb_checkpoints": true
+    }
   }
 }
