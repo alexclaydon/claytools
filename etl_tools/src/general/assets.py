@@ -9,6 +9,13 @@ from todoist_api_python.models import Task
 load_dotenv()
 
 
+def get_output_path():
+    output_dir = os.getenv("WORKING_OUTPUT_DIR")
+    if not output_dir:
+        raise ValueError("WORKING_OUTPUT_DIR environment variable is not set")
+    return os.path.join(output_dir, "tasks.json")
+
+
 def extract_tasks_list() -> list:
     api = TodoistAPI(os.getenv("TODOIST_API_TOKEN"))
     try:
@@ -35,7 +42,8 @@ def todoist_all_tasks():
 
 
 if __name__ == "__main__":
-    with open("tasks.json", "w", encoding="utf-8") as file:
+    output_path = get_output_path()
+    with open(output_path, "w", encoding="utf-8") as file:
         result = json.dump(
             transform_todoist_tasks_dict(extract_tasks_list()), fp=file, indent=4
         )
