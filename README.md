@@ -42,6 +42,8 @@ Next, install other non-Python dependencies:
 
 Note that I was initially using `pip install -r requirements.txt` to install dependencies, but have since moved to include a `pyproject.toml` file, consistent with modern Python packaging recommendations.
 
+See [Configuring setuptools using `pyproject.toml` files](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) and [Development Mode (a.k.a. "Editable Installs")](https://setuptools.pypa.io/en/latest/userguide/development_mode.html).
+
 ## Other Workspace Python Interpreters
 
 Instructions for tool-specific interpreters can be found in the `README.md` file under the relevant subfolder.
