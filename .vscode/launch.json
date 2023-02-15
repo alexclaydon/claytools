@@ -5,18 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "zshdb",
-      "request": "launch",
-      "name": "Zsh: download-all-pages.sh",
-      "cwd": "$HOME/dev/dev-projects/claytools/web_tools",
-      "program": "$HOME/dev/dev-projects/claytools/web_tools/download-all-pages.sh",
-      "args": []
-    },
-    {
-      "name": "Python: get-urls.py",
+      "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      "program": "web_tools/get-urls.py",
+      "program": "${file}",
       "console": "integratedTerminal",
       "justMyCode": true
     }
