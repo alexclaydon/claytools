@@ -3,6 +3,9 @@ import os
 
 import openai
 from dotenv import load_dotenv
+from rich import print
+from rich.console import Console
+from rich.syntax import Syntax
 
 load_dotenv()
 
@@ -40,5 +43,7 @@ if __name__ == "__main__":
     # Generate the improved text
     improved_text = generate_improved_text(input_text)
 
-    # Print the generated text
-    print(improved_text)
+    # Colorize and print the generated text
+    console = Console()
+    syntax = Syntax(improved_text, "text", theme="monokai", word_wrap=True)
+    console.print(syntax)
