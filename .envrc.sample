@@ -20,3 +20,6 @@ JOURNALS_PATH=
 
 # create-multipart-archive-from-folder
 ZIP_PASSWORD=""
+
+# Tokens
+OPENAI_API_TOKEN=""

@@ -3,13 +3,11 @@ black
 python-dotenv
 python-dateutil
 isort
-
-# text_tools
+openai
+prompt-engine-py
+rich[jupyter]
 markdown
 mdx_wikilink_plus
-
-# web_tools
 beautifulsoup4
-
-# jupyter
 jupyterlab
+pytest

@@ -1,20 +1,71 @@
-# See https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
-
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "claytools"
-version = "0.1.0"
-description = "Tooling for common tasks across all my projects."
+description = 'A collection of convenience tools to help me do the stuff I do faster and with less friction.'
+readme = "README.md"
 requires-python = ">=3.11"
-dynamic = ["dependencies"]
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Alex Claydon", email = "alexclaydon@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  'black',
+  'isort',
+  'python-dotenv',
+  'python-dateutil',
+  'openai',
+  'prompt-engine-py',
+  'rich[jupyter]',
+  'markdown',
+  'mdx_wikilink_plus',
+  'beautifulsoup4',
+  'jupyterlab',
+]
+dynamic = ["version"]
 
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+[project.urls]
+Documentation = "https://github.com/alexclaydon/claytools#readme"
+Issues = "https://github.com/alexclaydon/claytools/issues"
+Source = "https://github.com/alexclaydon/claytools"
 
-[tool.setuptools.packages.find]
-where = ["src"]  # list of folders that contain the packages (["."] by default)
-include = ["shared_utils*"]  # package names should match these glob patterns (["*"] by default)
-namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+[tool.hatch.version]
+path = "__about__.py"
+
+[tool.hatch.envs.default]
+type = "virtual"
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=claytools --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "claytools/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

@@ -1,0 +1,15 @@
+black
+isort
+python-dotenv
+
+# API Documentation
+doc2dash
+
+# Blender
+fake-bpy-module-3.3
+
+# YT
+yt-dlp
+google-auth
+google-api-python-client
+pytube3

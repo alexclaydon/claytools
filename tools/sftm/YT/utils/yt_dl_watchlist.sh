@@ -20,5 +20,5 @@ fi
 echo "Downloading audio from videos in watchlist at URL: $watchlist_url"
 yt-dlp --cookies-from-browser firefox -f 'ba' -x --audio-format mp3 --yes-playlist -o "$YT_LISTEN_DIR/%(title)s.%(ext)s" "$watchlist_url"
 
-# Run it from the root `sftm_tools` project directory with:
+# Run it from the root `sftm` project directory with:
 # Usage: ./YT/utils/yt_dl_watchlist.sh

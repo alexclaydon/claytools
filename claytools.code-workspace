@@ -4,20 +4,20 @@
       "path": "."
     },
     {
-      "path": "etl_tools"
+      "path": "tools/etl"
     },
     {
-      "path": "icloud_photos_dl"
+      "path": "tools/icloud_photos_dl"
     },
     {
-      "path": "src/sftm_tools"
+      "path": "tools/sftm"
     },
     {
-      "path": "src/tui"
+      "path": "tools/tui"
     }
   ],
   "settings": {
-    "python.defaultInterpreterPath": "/.venv/bin/python3.11",
+    "python.defaultInterpreterPath": ".hatch/claytools/bin/python3.11",
     "[python]": {
       "editor.defaultFormatter": "ms-python.black-formatter",
       "editor.formatOnSave": true,
